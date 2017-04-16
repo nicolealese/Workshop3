@@ -13,6 +13,7 @@
 
 body {
   padding-top: 60px;
+  background-color: #e9eaed;
 }
 
 .fb-search {
@@ -81,6 +82,42 @@ body {
 .fb-status-update .panel-body {
   padding-bottom: 5px;
 }
+
+/* Fix background, text, and border of right sidebar. */
+.fb-right-sidebar {
+  /* Gray text. This is the same color Facebook uses. */
+  color: #9197a3;
+  border: 1px solid lightgrey;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+/* Make the birthday icon look more Facebookey. */
+.fb-right-sidebar .glyphicon-gift {
+  color: white;
+  background-color: red;
+  /* Sets padding at 2px on all sides at once */
+  padding: 2px;
+  /* Sets the border radius to 2px for each corner. */
+  border-radius: 2px;
+}
+/* Customize the look of non-active pills in trending widget */
+.fb-trending > .row:first-child li a {
+  /* Tells the element to inherit the color from its parent. */
+  color: inherit;
+}
+
+/* Customize the look of active pills in trending widget */
+.fb-trending > .row:first-child li.active a {
+  background-color: transparent;
+  /* Same color as the lightning bolt */
+  color: #5990ff;
+}
+/* Apply a light-blue color to flash icons *only* in the content
+   section of the trending widget. */
+   .fb-trending > .row:nth-child(2) .glyphicon-flash {
+     color: #5990ff;
+   }
 
 .green {
   color: green;
